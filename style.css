@@ -1,0 +1,773 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #1a1a1a;
+}
+
+:root{
+    --main-color: #1a1a1a;
+}
+
+/*
+====================================================================================================================================================================
+                                                    Nav 
+====================================================================================================================================================================
+*/
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #232323;
+    z-index: 1;
+}
+
+
+.navigation .LogoAlt{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+  }
+
+.navlinks{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 150px;
+}
+
+.navlinks li {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-left: 80%;
+  }
+  
+.navlinks a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-top: 43px;
+    margin-left: 30px;
+  }
+
+
+
+  /* Cart */
+.navigation #cart-icon {
+    position: absolute;
+    top: 37px;
+    margin-left: 94%;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+  }
+
+.cart.active{
+    right: 0;
+}
+
+.cart-title{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 0% 50% 18%;
+    align-items: center;
+}
+
+.service-img{
+    width: 320px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 1px;
+}
+
+.cart-service-title{
+    margin-top: 180px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 400;
+}
+
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: #1a1a1a;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cart-remove{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 150px;
+    font-size: 24px;
+    color: #d42f2f;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-order{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-order:hover{
+    background: #d42f2f;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #d42f2f;
+    cursor: pointer;
+}
+
+/*
+====================================================================================================================================================================
+                                                    Landing Page 
+====================================================================================================================================================================
+*/
+
+#LandingPage {
+    height: 850px;
+}
+
+section{
+    align-content: center;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#LandingPage container{
+    position: absolute;
+    top: 170px;
+    left: 130px;
+    width: 100%;
+    align-content: center;
+}
+
+#LandingPage container h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+#LandingPage container p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #959595;
+    margin-top: 5px;
+}
+
+#LandingPage container h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+    width: 1050px;
+}
+/*
+====================================================================================================================================================================
+                                                    Project 
+====================================================================================================================================================================
+*/
+
+.Projects container{
+    text-align: center;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+    justify-content: stretch;
+}
+
+.Projects{
+    position: relative;
+}
+
+.Projects container img:hover{
+    padding: 30px;
+    border: 1px solid white;
+    transition: 0.4s;
+}
+
+.Projects container h1{
+    font-weight: 400;
+    color: white;
+    align-content: center;
+    font-size: 44px;
+    margin-bottom: 35px;
+}
+.Projects container img{
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+}
+
+.Projects container h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.Projects container h3{
+    font-weight: 400;
+    font-size: 14px;
+    color: #959595;
+    margin-top: 10px;
+}
+
+.Projects container span{
+    margin-left: 49%;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #959595;
+    margin-top: 10px;
+}
+
+
+.Projects #cart-icon {
+    font-size: 25px;
+    color: white;
+}
+
+.add-cart{
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.Projects container i{
+    color: white;
+    font-size: 20px;
+}
+
+#expr{
+    margin-left: 5%;
+    margin-top: 300px;
+    height: 400px;
+}
+
+
+#Experience {
+    display: grid;
+    width: 100%;
+    max-width: 1680px;
+}
+
+#Experience h2{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+#Experience h4{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #959595;
+    max-width: 530px;
+}
+
+#Experience div h3{
+    padding-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#Experience div p{
+    font-size: 12px;
+    color: white;
+}
+
+#program-div{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 100%;
+}
+
+.Program{
+    padding-left: 25px;
+}
+
+
+
+#cform{
+    align-content: center;
+    width: 95%;
+    height: 937px;
+    background-color:  #3d3d3d;
+    color: white;
+    padding-left: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact-headline{
+    padding-bottom: 40px;
+}
+
+#contact-form h3{
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#contact-form p{
+    font-size: 16px;
+    color: #959595;
+}
+
+#contact-form label{
+    padding-bottom: 10px;
+}
+
+#cform form label{
+    font-size: 12px;
+    font-weight: 500px;
+    display: block;
+}
+
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 20px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+input[type=submit] {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    color:white;
+    background-color: #1a1a1a;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .fa {
+    padding: 18px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram{
+    background: #d6249f;
+  }
+
+.footer{
+    height: 100px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323;
+    color: white;
+    text-align: center;
+}
+
+.footerlinks{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer li {
+    list-style: none;
+  }
+  
+.footer a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  /*
+====================================================================================================================================================================
+                                                    Responsive 
+====================================================================================================================================================================
+*/
+
+@Media screen and (max-width: 1366px){
+
+    /*body{
+        background-color: #d42f2f;
+    }*/
+    
+    #LandingPage {
+        height: 850px;
+    }
+
+    #LandingPage container h1{
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: white;
+        width: 63%;
+        min-width: 800px;
+    }
+
+    #expr{
+        margin-left: 5%;
+        margin-top: 300px;
+        height: 400px;
+    }
+    
+    #Experience {
+        display: grid;
+        width: 100%;
+        max-width: 1680px;
+    }
+    
+    #Experience h2{
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+    }
+    
+    #Experience h4{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #959595;
+        max-width: 320px;
+    }
+    
+    #Experience div h3{
+        font-size: 15px;
+       margin-top: 2px;
+    }
+    
+    #program-div{
+        display:flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        width: 100%;
+    }
+    
+}
+
+@Media screen and (max-width: 991px){
+
+    /*body{
+        background-color: #1b1b1b;
+    }*/
+    #LandingPage {
+        height: 550px;
+    }
+    
+    section{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #LandingPage container{
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        width: 100%;
+        align-content: center;
+    }
+
+    #LandingPage container h4{
+        font-size: 20px;
+    }
+
+    #LandingPage container p{
+        font-size: 16px;
+    }
+
+    #LandingPage container h1{
+        font-size: 45px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: white;
+        min-width: 750px;
+    }
+
+    #expr{
+        margin-top: 100px;
+        height: 400px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #Experience {
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+    }
+    
+    #Experience h2{
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+    }
+    
+    #Experience h4{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #959595;
+        max-width: 390px;
+    }
+    
+    #Experience div h3{
+        font-size: 15px;
+        margin-top: 2px;
+    }
+    
+    #program-div{
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 200px;
+    }
+    #program-div .Program{
+        
+    }
+    
+}
+
+@Media screen and (max-width: 700px){
+
+    /*body{
+        background-color: #9e5858;
+    }*/
+    #LandingPage {
+        height: 550px;
+    }
+    
+    section{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #LandingPage container{
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        width: 100%;
+        align-content: center;
+    }
+
+    #LandingPage container h4{
+        font-size: 20px;
+    }
+
+    #LandingPage container p{
+        font-size: 16px;
+    }
+
+    #LandingPage container h1{
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: white;
+        min-width: 500px;
+    }
+
+    #expr{
+        margin-top: 100px;
+        height: 400px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #Experience {
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+    }
+    
+    #Experience h2{
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+    }
+    
+    #Experience h4{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #959595;
+        max-width: 390px;
+    }
+    
+    #Experience div h3{
+        font-size: 15px;
+        margin-top: 2px;
+    }
+    
+    #program-div{
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 200px;
+    }
+
+    #program-div .Program{
+        
+    }
+    
+}
+
+

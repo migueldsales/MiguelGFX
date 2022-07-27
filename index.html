@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>MiguelGFX</title>
+</head>
+<body>
+    <header class="navigation">
+        <div>
+            <a href="#" class ="LogoAlt">MiguelGFX</a>
+            <ul class="navlinks">
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#expr">About</a>
+                    <a href="#cform">Contact</a>
+                </li>
+            </ul>
+        </div>
+            <!--Shopping cart-->
+            <div class="shopping-cart">
+                <!--Shopping cart logo-->
+                <i class='bx bxs-cart' id ="cart-icon"></i>
+                <!--Cart-->
+                <div class ="cart">
+                    <h2 class ="cart-title">Your Cart</h2>
+                    <!--Content-->
+                    <div class="cart-content">
+                        
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-order">Order Now</button>
+                    <!--Cart Close-->
+                    <i class ='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+    </header>
+
+    <section id ="LandingPage">
+        <container>
+            <h4>Miguel Diokno Sales</h4>
+            <p>Graphic Designer and Digital Creator</p>
+            <h1>
+                Hi! I’m a Graphic Designer & Digital Creator based in the Philippines.
+            </h1>
+        </container>
+    </section>
+
+    <section class ="Projects">
+        <container>
+            <h1> SERVICES</h1>
+            <img src ="images/Megumi Banner Grainy.jpg" class ="service-img">
+            <h4 class ="service-title">Banner</h4>
+            <span class ="price">20$</span>
+            <i class='bx bxs-shopping-bag add-cart'></i>
+            <h3>BANNER FOR YOUR DESIRED SOCIAL MEDIA PLATFORM</h3>
+        </container>
+    </section>
+
+    <section class ="Projects">
+        <container>
+            <img src ="images/Astra.jpg" class ="service-img">
+            <h4 class ="service-title">Logo</h4>
+            <span class ="price">30$</span>
+            <i class='bx bxs-shopping-bag add-cart'></i>
+            <h3>LOGO FOR YOUR BRAND, BUSINESS OR WEBSITE</h3>
+        </container>
+    </section>
+
+    <section class ="Projects">
+        <container class ="service-box">
+            <img src ="images/tshirtdesign.jpg" class ="service-img">
+            <h4 class ="service-title">T-Shirt Design</h4>
+            <span class ="price">50$</span>
+            <i class='bx bxs-shopping-bag add-cart'></i>
+            <h3>T-SHIRT DESIGN/ILLUSTRATION FOR YOUR CLOTHING LINE</h3>
+        </container>
+    </section>
+
+    <section id ="expr">
+        <container id ="Experience">
+            <h2>My Experience</h2>
+            <h4>I am a self-taught Graphic Designer and Digital Creator, I am currently climbing my way to the top by gaining a lot of experience through exploring different kinds of projects. </h4>
+            <div id ="program-div">
+                <div class ="Program">
+                    <h3>Adobe Photoshop</h3>
+                    <h4>Graphic Designer</h4>
+                    <p>Aug 2020— Present</p>
+                </div>
+                <div class ="Program">
+                    <h3>Adobe Illustrator</h3>
+                    <h4>Basic</h4>
+                    <p>Jan 2022— Present</p>
+                </div>
+                <div class ="Program">
+                    <h3>Figma</h3>
+                    <h4>Prototype</h4>
+                    <p>June 2021— Present</p>
+                </div>
+                <div class ="Program">
+                    <h3>Web Developer</h3>
+                    <h4>UI Designer</h4>
+                    <p>Jan 2021— Present</p>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <section id="cform">
+        <container id="contact-form">
+                <div id ="contact-headline">
+                    <h3>What can I help you with?</h3>
+                    <h3>Drop me a line!</h3>
+                    <p>If you have a proposed project, fill up the form below</p>
+                </div>
+                <form onsubmit="alert('Your message has been sent!');return false">
+
+                    <label for="fname">NAME</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Enter Your name">
+                
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="text" id="email" name="email" placeholder="Your email">
+                    
+                    <label for="formlabel">FORM LABEL</label>
+                    <textarea id ="formlabel" name ="formlabel" placeholder="Enter your message" style="height: 200px;"></textarea>
+                    
+                    <input type="submit" value="Submit">
+
+                </form>
+        </container>
+    </section>
+
+    <div class="footer">
+        <ul class="footerlinks">
+            <li>
+                <a href="https://www.facebook.com/miggydsales/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/migueldsales" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/migueldsales/" class="fa fa-instagram"></a>
+            </li>
+        </ul>
+    </div>
+    
+
+
+<script src="main.js" ></script>
+</body>
+</html>
